@@ -6,15 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | datafisher</title>
+  <title>datafisher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="查看服务器硬件信息（1）查看服务器型号、序列号 [root@Master ~]# dmidecode|grep “System Information” -A9|egrep “Manufacturer|Product|Serial”    （2）查看主板型号[root@Master ~]# dmidecode |grep -A16 “System Information$”  （3）查看BIOS信">
+<meta property="og:type" content="article">
 <meta property="og:title" content="datafisher">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="http://example.com/2021/02/05/%E7%A1%AC%E4%BB%B6%E6%A3%80%E6%9F%A5/index.html">
 <meta property="og:site_name" content="datafisher">
+<meta property="og:description" content="查看服务器硬件信息（1）查看服务器型号、序列号 [root@Master ~]# dmidecode|grep “System Information” -A9|egrep “Manufacturer|Product|Serial”    （2）查看主板型号[root@Master ~]# dmidecode |grep -A16 “System Information$”  （3）查看BIOS信">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205101645216-1465909505.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205122329279-255997038.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1377467-20190330170014265-1978846836.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1377467-20190330170246062-683381907.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205124358951-360746286.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205124522935-887718013.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205124724295-289044696.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205130727873-76807497.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5Cclipboard-1600333761377.png">
+<meta property="og:image" content="g:%5CMD%5CMDPICTURE%5C9f03ecf7f1ec3acde9308bc96490227.png">
+<meta property="article:published_time" content="2021-02-05T08:59:51.226Z">
+<meta property="article:modified_time" content="2021-02-05T08:59:45.143Z">
 <meta property="article:author" content="Jiang Yu">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="g:%5CMD%5CMDPICTURE%5C1121174-20180205101645216-1465909505.png">
   
     <link rel="alternative" href="/atom.xml" title="datafisher" type="application/atom+xml">
   
@@ -150,64 +165,299 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-硬件检查" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="查看服务器硬件信息"><a href="#查看服务器硬件信息" class="headerlink" title="查看服务器硬件信息"></a><strong>查看服务器硬件信息</strong></h1><p>（1）查看服务器型号、序列号</p>
+<p>[root@Master ~]# dmidecode|grep “System Information” -A9|egrep “Manufacturer|Product|Serial” </p>
+<p><strong><img src="G:%5CMD%5CMDPICTURE%5C1121174-20180205101645216-1465909505.png" alt="img"></strong></p>
+<p> （2）查看主板型号<br>[root@Master ~]# dmidecode |grep -A16 “System Information$”<br><img src="G:%5CMD%5CMDPICTURE%5C1121174-20180205122329279-255997038.png" alt="img"></p>
+<p> （3）查看BIOS信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# dmidecode -t bios</span><br><span class="line"># dmidecode 2.12</span><br><span class="line">SMBIOS 2.8 present.</span><br><span class="line"></span><br><span class="line">Handle 0x0008, DMI type 0, 24 bytes</span><br><span class="line">BIOS Information</span><br><span class="line">        Vendor: HP</span><br><span class="line">        Version: U19</span><br><span class="line">        Release Date: 12&#x2F;27&#x2F;2015</span><br><span class="line">        Address: 0xF0000</span><br><span class="line">        Runtime Size: 64 kB</span><br><span class="line">        ROM Size: 16384 kB</span><br><span class="line">        Characteristics:</span><br><span class="line">                PCI is supported</span><br><span class="line">                PNP is supported</span><br><span class="line">                BIOS is upgradeable</span><br><span class="line">                BIOS shadowing is allowed</span><br><span class="line">                ESCD support is available</span><br><span class="line">                Boot from CD is supported</span><br><span class="line">                Selectable boot is supported</span><br><span class="line">                EDD is supported</span><br><span class="line">                5.25&quot;&#x2F;360 kB floppy services are supported (int 13h)</span><br><span class="line">                5.25&quot;&#x2F;1.2 MB floppy services are supported (int 13h)</span><br><span class="line">                3.5&quot;&#x2F;720 kB floppy services are supported (int 13h)</span><br><span class="line">                Print screen service is supported (int 5h)</span><br><span class="line">                8042 keyboard services are supported (int 9h)</span><br><span class="line">                Serial services are supported (int 14h)</span><br><span class="line">                Printer services are supported (int 17h)</span><br><span class="line">                CGA&#x2F;mono video services are supported (int 10h)</span><br><span class="line">                ACPI is supported</span><br><span class="line">                USB legacy is supported</span><br><span class="line">                BIOS boot specification is supported</span><br><span class="line">                Function key-initiated network boot is supported</span><br><span class="line">                Targeted content distribution is supported</span><br><span class="line">                UEFI is supported</span><br><span class="line">        BIOS Revision: 2.0</span><br><span class="line">        Firmware Revision: 2.40</span><br></pre></td></tr></table></figure>
+<p> （3）查看内存槽及内存条</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# dmidecode -t memory | head -45 | tail -23</span><br><span class="line">Memory Device</span><br><span class="line">        Array Handle: 0x000A</span><br><span class="line">        Error Information Handle: Not Provided</span><br><span class="line">        Total Width: 72 bits</span><br><span class="line">        Data Width: 64 bits</span><br><span class="line">        Size: 16384 MB</span><br><span class="line">        Form Factor: DIMM</span><br><span class="line">        Set: None</span><br><span class="line">        Locator: PROC 1 DIMM 1</span><br><span class="line">        Bank Locator: Not Specified</span><br><span class="line">        Type: DDR4</span><br><span class="line">        Type Detail: Synchronous Registered (Buffered)</span><br><span class="line">        Speed: 2133 MHz</span><br><span class="line">        Manufacturer: HP     </span><br><span class="line">        Serial Number: Not Specified</span><br><span class="line">        Asset Tag: Not Specified</span><br><span class="line">        Part Number: 752369-081</span><br><span class="line">        Rank: 2</span><br><span class="line">        Configured Clock Speed: 2133 MHz</span><br><span class="line">        Minimum Voltage:  1.2 V</span><br><span class="line">        Maximum Voltage:  1.2 V</span><br><span class="line">        Configured Voltage:  1.2 V</span><br><span class="line"></span><br><span class="line">[root@Master ~]#</span><br></pre></td></tr></table></figure>
+<p> （4）查看网卡信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# dmesg | grep -i Ethernet</span><br><span class="line">igb: Intel(R) Gigabit Ethernet Network Driver - version 5.3.0-k</span><br><span class="line">igb 0000:04:00.0: Intel(R) Gigabit Ethernet Network Connection</span><br><span class="line">igb 0000:04:00.1: Intel(R) Gigabit Ethernet Network Connection</span><br><span class="line">igb 0000:04:00.2: Intel(R) Gigabit Ethernet Network Connection</span><br><span class="line">igb 0000:04:00.3: Intel(R) Gigabit Ethernet Network Connection</span><br><span class="line">igb 0000:02:00.0: Intel(R) Gigabit Ethernet Network Connection</span><br><span class="line">igb 0000:02:00.1: Intel(R) Gigabit Ethernet Network Connection </span><br></pre></td></tr></table></figure>
+<p>（5） 查看pci信息，即主板所有硬件槽信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# lspci | head -10</span><br><span class="line">00:00.0 Host bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 DMI2 (rev 02)</span><br><span class="line">00:01.0 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 1 (rev 02)</span><br><span class="line">00:01.1 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 1 (rev 02)</span><br><span class="line">00:02.0 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 2 (rev 02)</span><br><span class="line">00:02.1 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 2 (rev 02)</span><br><span class="line">00:02.2 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 2 (rev 02)</span><br><span class="line">00:02.3 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 2 (rev 02)</span><br><span class="line">00:03.0 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 3 (rev 02)</span><br><span class="line">00:03.1 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 3 (rev 02)</span><br><span class="line">00:03.2 PCI bridge: Intel Corporation Xeon E7 v3&#x2F;Xeon E5 v3&#x2F;Core i7 PCI Express Root Port 3 (rev 02)</span><br></pre></td></tr></table></figure>
+<h2 id="Linux虚机还是物理机"><a href="#Linux虚机还是物理机" class="headerlink" title="Linux虚机还是物理机"></a>Linux虚机还是物理机</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dmesg | grep -i virtual是否有返回值，有则为物理机 </span><br><span class="line">egrep -c &#39;(vmx|svm)&#39; &#x2F;proc&#x2F;cpuinfo为0或者数值较小都可能是虚拟机</span><br></pre></td></tr></table></figure>
+<h1 id="cpu"><a href="#cpu" class="headerlink" title="cpu"></a>cpu</h1><h2 id="查看cpu信息"><a href="#查看cpu信息" class="headerlink" title="查看cpu信息"></a>查看cpu信息</h2><p>[monitor@PHY207PRI ~]$ lscpu<br>Architecture:          x86_64<br>CPU op-mode(s):        32-bit, 64-bit<br>Byte Order:            Little Endian<br>CPU(s):                40<br>On-line CPU(s) list:   0-39<br>Thread(s) per core:    2<br>Core(s) per socket:    10<br>Socket(s):             2<br>NUMA node(s):          2<br>Vendor ID:             GenuineIntel<br>CPU family:            6<br>Model:                 79<br>Stepping:              1<br>CPU MHz:               2201.000<br>BogoMIPS:              4389.74<br>Virtualization:        VT-x<br>L1d cache:             32K<br>L1i cache:             32K<br>L2 cache:              256K<br>L3 cache:              25600K<br>NUMA node0 CPU(s):     0-9,20-29<br>NUMA node1 CPU(s):     10-19,30-39</p>
+<p><strong>显示格式：</strong><br>　　Architecture: #架构<br>　　CPU(s): #逻辑cpu颗数<br>　　Thread(s) per core: #每个核心线程<br>　　Core(s) per socket: #每个cpu插槽核数/每颗物理cpu核数<br>　　CPU socket(s): #cpu插槽数<br>　　Vendor ID: #cpu厂商ID<br>　　CPU family: #cpu系列<br>　　Model: #型号<br>　　Stepping: #步进<br>　　CPU MHz: #cpu主频<br>　　Virtualization: #cpu支持的虚拟化技术<br>　　L1d cache: #一级缓存（google了下，这具体表示表示cpu的L1数据缓存）<br>　　L1i cache: #一级缓存（具体为L1指令缓存）<br>　　L2 cache: #二级缓存</p>
+<p>（1）查看cpu型号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c</span><br><span class="line">     40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz</span><br></pre></td></tr></table></figure>
+<p>（2）查看系统中实际物理CPU的数量（物理）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# grep &#x27;physical id&#x27; /proc/cpuinfo | sort | uniq | wc -l</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+<p>（3）系统中实际逻辑CPU的数量（核数）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# cat /proc/cpuinfo |grep &#x27;processor&#x27;|wc -l</span><br><span class="line">40</span><br></pre></td></tr></table></figure>
+<p> （4）查看每个物理CPU中core的个数(即核数)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# cat /proc/cpuinfo |grep &quot;cores&quot;|uniq </span><br><span class="line">cpu cores       : 10</span><br></pre></td></tr></table></figure>
+<p>（5）查看CPU的主频</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# cat /proc/cpuinfo |grep MHz|uniq </span><br><span class="line">cpu MHz         : 1200.000</span><br><span class="line">cpu MHz         : 2300.000</span><br><span class="line">cpu MHz         : 1200.000</span><br></pre></td></tr></table></figure>
+<p>（6）查看CPU的详细信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# cat /proc/cpuinfo | head -20</span><br><span class="line">processor       : 0                           //逻辑处理器的ID</span><br><span class="line">vendor_id       : GenuineIntel</span><br><span class="line">cpu family      : 6</span><br><span class="line">model           : 63</span><br><span class="line">model name      : Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz   //CPU型号</span><br><span class="line">stepping        : 2</span><br><span class="line">microcode       : 54</span><br><span class="line">cpu MHz         : 1200.000</span><br><span class="line">cache size      : 25600 KB</span><br><span class="line">physical id     : 0</span><br><span class="line">siblings        : 20                //相同物理封装处理器中逻辑处理器数</span><br><span class="line">core id         : 0</span><br><span class="line">cpu cores       : 10               //相同物理封装处理器中的内核数</span><br><span class="line">apicid          : 0</span><br><span class="line">initial apicid  : 0</span><br><span class="line">fpu             : yes</span><br><span class="line">fpu_exception   : yes</span><br><span class="line">cpuid level     : 15</span><br><span class="line">wp              : yes</span><br><span class="line">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm cqm_llc cqm_occup_llc</span><br></pre></td></tr></table></figure>
+<p> （7）查看CPU的相关信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# lscpu</span><br><span class="line">Architecture:          x86_64</span><br><span class="line">CPU op-mode(s):        32-bit, 64-bit</span><br><span class="line">Byte Order:            Little Endian</span><br><span class="line">CPU(s):                40</span><br><span class="line">On-line CPU(s) list:   0-39</span><br><span class="line">Thread(s) per core:    2</span><br><span class="line">Core(s) per socket:    10</span><br><span class="line">Socket(s):             2</span><br><span class="line">NUMA node(s):          2</span><br><span class="line">Vendor ID:             GenuineIntel</span><br><span class="line">CPU family:            6</span><br><span class="line">Model:                 63</span><br><span class="line">Model name:            Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz</span><br><span class="line">Stepping:              2</span><br><span class="line">CPU MHz:               1200.000</span><br><span class="line">BogoMIPS:              4594.43</span><br><span class="line">Virtualization:        VT-x</span><br><span class="line">L1d cache:             32K</span><br><span class="line">L1i cache:             32K</span><br><span class="line">L2 cache:              256K</span><br><span class="line">L3 cache:              25600K</span><br><span class="line">NUMA node0 CPU(s):     0-9,20-29</span><br><span class="line">NUMA node1 CPU(s):     10-19,30-39</span><br><span class="line">[root@Master ~]# </span><br></pre></td></tr></table></figure>
+<p> （8）查看cpu运行模式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# getconf LONG_BIT</span><br><span class="line">64</span><br></pre></td></tr></table></figure>
+<p> （9）查看cpu是否支持64bit</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]#  cat /proc/cpuinfo | grep flags | grep &#x27; lm &#x27; | wc -l</span><br><span class="line">40</span><br><span class="line">(结果大于0, 说明支持64bit计算. lm指long mode, 支持lm则是64bit)</span><br></pre></td></tr></table></figure>
+<h2 id="CPU：chip、core-和-processor-的关系"><a href="#CPU：chip、core-和-processor-的关系" class="headerlink" title="CPU：chip、core 和 processor 的关系"></a>CPU：chip、core 和 processor 的关系</h2><p>可以这样理解：一个 server 有 x 个 chip，每个 chip 上有 y 个 core，每个 core 有 z 个 processor</p>
+<p>（1） 查看物理CPU个数   （chip）</p>
+<p>物理cpu数：主板上实际插入的cpu数量，可以数不重复的 physical id 有几个（physical id）<br>cat /proc/cpuinfo| grep “physical id”| sort| uniq| wc -l</p>
+<p>（2）查看每个物理CPU中core的个数   （core）</p>
+<p>cpu核数：单块CPU上面能处理数据的芯片组的数量，如双核、四核等 （cpu cores）<br>cat /proc/cpuinfo| grep “cpu cores”| uniq</p>
+<p>（3） 查看逻辑CPU的个数   （processor）</p>
+<p>逻辑cpu数：一般情况下，逻辑cpu=物理CPU个数×每颗核数，如果不相等的话，则表示服务器的CPU支持超线程技术（HT：简单来说，它可使处理器中的1 颗内核如2 颗内核那样在操作系统中发挥作用。这样一来，操作系统可使用的执行资源扩大了一倍，大幅提高了系统的整体性能，此时逻辑cpu=物理CPU个数×每颗核数x2）</p>
+<p>cat /proc/cpuinfo| grep “processor”| wc -l</p>
+<p><img src="G:%5CMD%5CMDPICTURE%5C1377467-20190330170014265-1978846836.png" alt="img"></p>
+<p>查询系统CPU是否启用超线程：cat /proc/cpuinfo | grep -e “cpu cores” -e “siblings” | sort | uniq</p>
+<p><img src="G:%5CMD%5CMDPICTURE%5C1377467-20190330170246062-683381907.png" alt="img"></p>
+<p>cpu cores 不大于 siblings 还没有启用超线程。</p>
+<h1 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h1><p>1）查看内存硬件信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">root@Master ~]# dmidecode -t memory | head -45 | tail -24</span><br><span class="line">Handle 0x000C, DMI type 17, 40 bytes</span><br><span class="line">Memory Device</span><br><span class="line">        Array Handle: 0x000A</span><br><span class="line">        Error Information Handle: Not Provided</span><br><span class="line">        Total Width: 72 bits</span><br><span class="line">        Data Width: 64 bits</span><br><span class="line">        Size: 16384 MB</span><br><span class="line">        Form Factor: DIMM</span><br><span class="line">        Set: None</span><br><span class="line">        Locator: PROC 1 DIMM 1</span><br><span class="line">        Bank Locator: Not Specified</span><br><span class="line">        Type: DDR4</span><br><span class="line">        Type Detail: Synchronous Registered (Buffered)</span><br><span class="line">        Speed: 2133 MHz</span><br><span class="line">        Manufacturer: HP     </span><br><span class="line">        Serial Number: Not Specified</span><br><span class="line">        Asset Tag: Not Specified</span><br><span class="line">        Part Number: 752369-081</span><br><span class="line">        Rank: 2</span><br><span class="line">        Configured Clock Speed: 2133 MHz</span><br><span class="line">        Minimum Voltage:  1.2 V</span><br><span class="line">        Maximum Voltage:  1.2 V</span><br><span class="line">        Configured Voltage:  1.2 V</span><br></pre></td></tr></table></figure>
+<p> （2）最大支持多少内存<br>[root@Master ~]# dmidecode|grep -P ‘Maximum\s+Capacity’<br><img src="G:%5CMD%5CMDPICTURE%5C1121174-20180205124358951-360746286.png" alt="img"></p>
+<p> （3）Linux 查看内存的插槽数,已经使用多少插槽.每条内存多大：</p>
+<p>dmidecode|grep -A5 “Memory Device”|grep Size|grep -v Range</p>
+<p><img src="G:%5CMD%5CMDPICTURE%5C1121174-20180205124522935-887718013.png" alt="img"></p>
+<p> （4）Linux 查看内存的频率：<br>[root@Master ~]# dmidecode|grep -A16 “Memory Device”|grep ‘Speed’</p>
+<p><img src="G:%5CMD%5CMDPICTURE%5C1121174-20180205124724295-289044696.png" alt="img"></p>
+<p> （5）Linux 查看内存的详细信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# cat &#x2F;proc&#x2F;meminfo |head -20</span><br><span class="line">MemTotal:       131897620 kB</span><br><span class="line">MemFree:          414124 kB</span><br><span class="line">Buffers:         1040560 kB</span><br><span class="line">Cached:         111083180 kB</span><br><span class="line">SwapCached:         1320 kB</span><br><span class="line">Active:          7637912 kB</span><br><span class="line">Inactive:       110607108 kB</span><br><span class="line">Active(anon):    4406900 kB</span><br><span class="line">Inactive(anon):  1714900 kB</span><br><span class="line">Active(file):    3231012 kB</span><br><span class="line">Inactive(file): 108892208 kB</span><br><span class="line">Unevictable:    10878976 kB</span><br><span class="line">Mlocked:         5521652 kB</span><br><span class="line">SwapTotal:      16777212 kB</span><br><span class="line">SwapFree:       16737536 kB</span><br><span class="line">Dirty:               180 kB</span><br><span class="line">Writeback:             0 kB</span><br><span class="line">AnonPages:      16999324 kB</span><br><span class="line">Mapped:           149020 kB</span><br><span class="line">Shmem:               172 kB</span><br></pre></td></tr></table></figure>
+<p>（6）Linux 查看内存的使用情况</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# free -m    &#x2F;&#x2F; -b,-k,-m,-g show output in bytes, KB, MB, or GB</span><br><span class="line">             total       used       free     shared    buffers     cached</span><br><span class="line">Mem:        128806     123407       5398          0       1015     103474</span><br><span class="line">-&#x2F;+ buffers&#x2F;cache:      18918     109888</span><br><span class="line">Swap:        16383         38      16345</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="查看硬盘信息"><a href="#查看硬盘信息" class="headerlink" title="查看硬盘信息"></a>查看硬盘信息</h1><p>（1）查看挂接的分区状态<br>[root@Master ~]# fdisk -l |grep Disk<br><img src="G:%5CMD%5CMDPICTURE%5C1121174-20180205130727873-76807497.png" alt="img"></p>
+<p>（2）查看硬盘和分区分布    lsblk</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# lsblk</span><br><span class="line">NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT</span><br><span class="line">sda      8:0    0 279.4G  0 disk </span><br><span class="line">├─sda1   8:1    0    50M  0 part &#x2F;boot</span><br><span class="line">├─sda2   8:2    0   100G  0 part &#x2F;</span><br><span class="line">├─sda3   8:3    0    50G  0 part &#x2F;home</span><br><span class="line">├─sda4   8:4    0     1K  0 part </span><br><span class="line">├─sda5   8:5    0    16G  0 part [SWAP]</span><br><span class="line">├─sda6   8:6    0  13.3G  0 part &#x2F;tmp</span><br><span class="line">└─sda7   8:7    0   100G  0 part &#x2F;usr</span><br><span class="line">sdb      8:16   0  83.7T  0 disk </span><br><span class="line">└─sdb1   8:17   0  83.7T  0 part &#x2F;PureDisk</span><br></pre></td></tr></table></figure>
+<p> （3）查看硬盘和分区的详细信息  fdisk -l</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# fdisk -l           </span><br><span class="line"></span><br><span class="line">Disk &#x2F;dev&#x2F;sda: 300.0 GB, 299966445568 bytes</span><br><span class="line">255 heads, 63 sectors&#x2F;track, 36468 cylinders</span><br><span class="line">Units &#x3D; cylinders of 16065 * 512 &#x3D; 8225280 bytes</span><br><span class="line">Sector size (logical&#x2F;physical): 512 bytes &#x2F; 512 bytes</span><br><span class="line">I&#x2F;O size (minimum&#x2F;optimal): 262144 bytes &#x2F; 262144 bytes</span><br><span class="line">Disk identifier: 0x000384d9</span><br><span class="line"></span><br><span class="line">   Device Boot      Start         End      Blocks   Id  System</span><br><span class="line">&#x2F;dev&#x2F;sda1   *           1           7       51200   83  Linux</span><br><span class="line">Partition 1 does not end on cylinder boundary.</span><br><span class="line">&#x2F;dev&#x2F;sda2               7       13061   104857600   83  Linux</span><br><span class="line">&#x2F;dev&#x2F;sda3           13061       19588    52428800   83  Linux</span><br><span class="line">&#x2F;dev&#x2F;sda4           19588       36469   135597056    5  Extended</span><br><span class="line">&#x2F;dev&#x2F;sda5           19588       21677    16777216   82  Linux swap &#x2F; Solaris</span><br><span class="line">&#x2F;dev&#x2F;sda6           21677       23415    13962240   83  Linux</span><br><span class="line">&#x2F;dev&#x2F;sda7           23416       36469   104854528   83  Linux</span><br><span class="line"></span><br><span class="line">WARNING: GPT (GUID Partition Table) detected on &#39;&#x2F;dev&#x2F;sdb&#39;! The util fdisk doesn&#39;t support GPT. Use GNU Parted.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Disk &#x2F;dev&#x2F;sdb: 92017.3 GB, 92017310654464 bytes</span><br><span class="line">255 heads, 63 sectors&#x2F;track, 11187134 cylinders</span><br><span class="line">Units &#x3D; cylinders of 16065 * 512 &#x3D; 8225280 bytes</span><br><span class="line">Sector size (logical&#x2F;physical): 512 bytes &#x2F; 512 bytes</span><br><span class="line">I&#x2F;O size (minimum&#x2F;optimal): 262144 bytes &#x2F; 6029312 bytes</span><br><span class="line">Disk identifier: 0x00000000</span><br><span class="line"></span><br><span class="line">   Device Boot      Start         End      Blocks   Id  System</span><br><span class="line">&#x2F;dev&#x2F;sdb1               1      267350  2147483647+  ee  GPT</span><br><span class="line">Partition 1 does not start on physical sector boundary.</span><br></pre></td></tr></table></figure>
+<p> （4）查看挂接的分区状态   mount | column -t</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# mount | column -t</span><br><span class="line">&#x2F;dev&#x2F;sda2  on  &#x2F;                         type  ext4         (rw)</span><br><span class="line">proc       on  &#x2F;proc                     type  proc         (rw)</span><br><span class="line">sysfs      on  &#x2F;sys                      type  sysfs        (rw)</span><br><span class="line">devpts     on  &#x2F;dev&#x2F;pts                  type  devpts       (rw,gid&#x3D;5,mode&#x3D;620)</span><br><span class="line">tmpfs      on  &#x2F;dev&#x2F;shm                  type  tmpfs        (rw)</span><br><span class="line">&#x2F;dev&#x2F;sda1  on  &#x2F;boot                     type  ext4         (rw)</span><br><span class="line">&#x2F;dev&#x2F;sda3  on  &#x2F;home                     type  ext4         (rw)</span><br><span class="line">&#x2F;dev&#x2F;sda6  on  &#x2F;tmp                      type  ext4         (rw)</span><br><span class="line">&#x2F;dev&#x2F;sda7  on  &#x2F;usr                      type  ext4         (rw)</span><br><span class="line">&#x2F;dev&#x2F;sdb1  on  &#x2F;PureDisk                 type  ext4         (rw)</span><br><span class="line">none       on  &#x2F;proc&#x2F;sys&#x2F;fs&#x2F;binfmt_misc  type  binfmt_misc  (rw</span><br></pre></td></tr></table></figure>
+<p> （5）查看挂接的分区状态    swapon -s </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# swapon -s   </span><br><span class="line">Filename                                Type            Size    Used    Priority</span><br><span class="line">&#x2F;dev&#x2F;sda5                               partition       16777212        39676   -1</span><br></pre></td></tr></table></figure>
+<p> （6）查看硬盘使用情况    df -hT</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# df -hT</span><br><span class="line">Filesystem     Type   Size  Used Avail Use% Mounted on</span><br><span class="line">&#x2F;dev&#x2F;sda2      ext4    99G  561M   93G   1% &#x2F;</span><br><span class="line">tmpfs          tmpfs   63G   76K   63G   1% &#x2F;dev&#x2F;shm</span><br><span class="line">&#x2F;dev&#x2F;sda1      ext4    45M   38M  4.9M  89% &#x2F;boot</span><br><span class="line">&#x2F;dev&#x2F;sda3      ext4    50G   52M   47G   1% &#x2F;home</span><br><span class="line">&#x2F;dev&#x2F;sda6      ext4    13G   34M   13G   1% &#x2F;tmp</span><br><span class="line">&#x2F;dev&#x2F;sda7      ext4    99G   21G   73G  23% &#x2F;usr</span><br><span class="line">&#x2F;dev&#x2F;sdb1      ext4    84T   41T   40T  51% &#x2F;PureDisk</span><br></pre></td></tr></table></figure>
+<p> （7） 硬盘检测命令smartctl</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[root@Master ~]# smartctl -a &#x2F;dev&#x2F;sda</span><br><span class="line">smartctl 5.43 2012-06-30 r3573 [x86_64-linux-2.6.32-642.el6.x86_64] (local build)</span><br><span class="line">Copyright (C) 2002-12 by Bruce Allen, http:&#x2F;&#x2F;smartmontools.sourceforge.net</span><br><span class="line"></span><br><span class="line">Vendor:               HP      </span><br><span class="line">Product:              LOGICAL VOLUME  </span><br><span class="line">Revision:             3.56</span><br><span class="line">User Capacity:        299,966,445,568 bytes [299 GB]</span><br><span class="line">Logical block size:   512 bytes</span><br><span class="line">Logical Unit id:      0x600508b1001cc8a1b9ec4dacc5ab35dc</span><br><span class="line">Serial number:        PDNNK0BRH9U0AG  </span><br><span class="line">Device type:          disk</span><br><span class="line">Local Time is:        Mon Feb  5 13:13:33 2018 CST</span><br><span class="line">Device supports SMART and is Enabled</span><br><span class="line">Temperature Warning Disabled or Not Supported</span><br><span class="line">SMART Health Status: OK</span><br><span class="line"></span><br><span class="line">Error Counter logging not supported</span><br><span class="line">Device does not support Self Test logging</span><br></pre></td></tr></table></figure>
+<p>（8）raid</p>
+<p># dmesg |grep -i raid<br># cat /proc/scsi/scsi</p>
+<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="1、linux内核版本"><a href="#1、linux内核版本" class="headerlink" title="1、linux内核版本"></a><strong>1、linux内核版本</strong></h2><p>cat /proc/version</p>
+<p>uname -a</p>
+<p><strong>linux系统版本</strong></p>
+<p>lsb_release -a（内核和系统版本具体）</p>
+<p>cat /etc/redhat-release</p>
+<p>cat /etc/issue</p>
+<h2 id="2、查看cpu信息"><a href="#2、查看cpu信息" class="headerlink" title="2、查看cpu信息"></a><strong>2、查看cpu信息</strong></h2><p>cat /proc/cpuinfo</p>
+<p>查看cpu 型号和逻辑核心数</p>
+<pre><code> cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+</code></pre>
+<p>​     cpu 运行的位数</p>
+<pre><code> getconf LONG_BIT
+</code></pre>
+<p>​     物理cpu 个数</p>
+<pre><code> cat /proc/cpuinfo | grep physical | uniq -c    
+</code></pre>
+<p>top（查看进程）</p>
+<p><em>top -c 命令可以查看到具体的命令</em></p>
+<p><em>top -n1 静态的一次性显示所有的信息，适合在写脚本时使用。</em></p>
+<p><em>PID用来”杀死”进程。kill +PID就能杀死相对于的进程。</em></p>
+<p>pstree </p>
+<p>进程树</p>
+<p>vmstat</p>
+<p>vmstat 1 <em>//显示的信息每一秒打印一次，按下ctrl +c 结束</em></p>
+<p>vmstat  1 5 <em>//每一秒钟显示一次 ，共显示5次后结束</em></p>
+<p><em>默认情况是是使用%cpu来排序。</em> </p>
+<p><em>按大写的M来用内存排序，切换为%cpu排序按大小的P</em></p>
+<p><em>数字1显示所有CPU的使用情况。</em></p>
+<h2 id="3、查看内存信息"><a href="#3、查看内存信息" class="headerlink" title="3、查看内存信息"></a><strong>3、查看内存信息</strong></h2><p>free -m</p>
+<p>top </p>
+<p>vmstat</p>
+<p>cat /proc/meminfo</p>
+<h2 id="4、查看磁盘使用"><a href="#4、查看磁盘使用" class="headerlink" title="4、查看磁盘使用"></a><strong>4、查看磁盘使用</strong></h2><p>df -h 查看磁盘使用</p>
+<p>df -h指定目录 查看指定文件挂载的磁盘</p>
+<p>du -sh 查看指定文件大小</p>
+<p>lsblk 查看磁盘</p>
+<h2 id="5、查看系统日志"><a href="#5、查看系统日志" class="headerlink" title="5、查看系统日志"></a><strong>5、查看系统日志</strong></h2><p>tail -1000f /var/log/messages（权限可能不够）</p>
+<p>dmesg|grep -i error</p>
+<h2 id="6、w-查看系统负载"><a href="#6、w-查看系统负载" class="headerlink" title="6、w 查看系统负载"></a><strong>6、w 查看系统负载</strong></h2><p>[root@mysql-study log]# w</p>
+<p> 22:06:08 up  7:47,  3 users,  load average: 0.00, 0.04, 0.05</p>
+<p>USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT</p>
+<p>root         tty1     -                        14:20         14:36   0.12s    0.12s -bash</p>
+<p>root        pts/0    172.16.4.89      21:35        30:33   0.05s    0.05s -bash</p>
+<p>root         pts/2    172.16.4.89      21:51        0.00s   0.26s     0.00s w</p>
+<p>第一行从左到右依次表示当前时间、系统已运行时间、登录用户数（终端登录显示为ttyx，远程登录显示为ptsx/x）、平均负载（每1分钟、每5分钟、每15分钟）主要是注意第一个负载值，值越大说明服务器压力越大。一般情况下，这个值不要超过服务器的逻辑cpu数量就没有关系</p>
+<h2 id="7、软链接"><a href="#7、软链接" class="headerlink" title="7、软链接"></a><strong>7、软链接</strong></h2><p>软连接：ln -s 源文件 目标文件（目标文件不能已经存在）        </p>
+<p><img src="G:%5CMD%5CMDPICTURE%5Cclipboard-1600333761377.png" alt="img"></p>
+<h2 id="8、查看日志"><a href="#8、查看日志" class="headerlink" title="8、查看日志"></a><strong>8、查看日志</strong></h2><p>cat ? | nl |less 上下翻页显示行号</p>
+<p>tail -f # 监视日志文件</p>
+<h2 id="9、软件管理"><a href="#9、软件管理" class="headerlink" title="9、软件管理"></a><strong>9、软件管理</strong></h2><p><strong>解包tar</strong></p>
+<p>tar xvf 1.tar -C 目录</p>
+<p><strong>打包tar</strong></p>
+<p>tar -cvf 1.tar *</p>
+<p><strong>解包gz</strong></p>
+<p>tar zxvpf gz.tar.gz</p>
+<p><strong>打包gz</strong> </p>
+<p>tar zcvpf gz.tar.gz</p>
+<p><strong>pm 安装</strong> </p>
+<p>rpm -ivh </p>
+<p><strong>卸载</strong> </p>
+<p>rpm -e lynx </p>
+<p><strong>强制卸载</strong> </p>
+<p>rpm -e lynx –nodeps </p>
+<p><strong>查看所有安装的rpm 包</strong> </p>
+<p>rpm -qa </p>
+<p><strong>查找包是否安装</strong> </p>
+<p>rpm -qa | grep http</p>
+<h2 id="10、查看命令路径"><a href="#10、查看命令路径" class="headerlink" title="10、查看命令路径"></a><strong>10、查看命令路径</strong></h2><p>whereis</p>
+<h2 id="11、时间"><a href="#11、时间" class="headerlink" title="11、时间"></a><strong>11、时间</strong></h2><p>时间同步设置  <a target="_blank" rel="noopener" href="https://www.cnblogs.com/itxiongwei/p/5556558.html">https://www.cnblogs.com/itxiongwei/p/5556558.html</a></p>
+<p>同步时间</p>
+<p>* */1 * * * root ntpdate stdtime.gov.hk;hwclock -w </p>
+<p>time.nuri.net</p>
+<p>/usr/sbin/ntpdate stdtime.gov.hk</p>
+<p>设置时间</p>
+<p>date -s </p>
+<p>显示月历</p>
+<p>cal</p>
+<h2 id="12、swapniess设置"><a href="#12、swapniess设置" class="headerlink" title="12、swapniess设置"></a><strong>12、swapniess设置</strong></h2><p>cat /proc/sys/vm/swappniess查看这个参数的配置（默认值是60）</p>
+<p>echo 0 &gt;&gt; /proc/sys/vm/swappniess 禁止操作系统使用任何的swap空间</p>
+<p>echo 100 &gt;&gt; /proc/sys/vm/swappniess 操作系统会尽量使用swap空间</p>
+<h2 id="13、修改hostname"><a href="#13、修改hostname" class="headerlink" title="13、修改hostname"></a><strong>13、修改hostname</strong></h2><p>vim /etc/sysconfig/network 配置host主机名</p>
+<p>使其生效：hostname  主机名</p>
+<p>配置 /etc/hosts 配置文件</p>
+<h2 id="14、查看网卡是千兆还是万兆"><a href="#14、查看网卡是千兆还是万兆" class="headerlink" title="14、查看网卡是千兆还是万兆"></a><strong>14、查看网卡是千兆还是万兆</strong></h2><p><img src="G:%5CMD%5CMDPICTURE%5C9f03ecf7f1ec3acde9308bc96490227.png" alt="img"></p>
+<p><strong>15、</strong></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/02/05/%E7%A1%AC%E4%BB%B6%E6%A3%80%E6%9F%A5/" class="archive-article-date">
-  	<time datetime="2021-02-05T08:59:51.226Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-05</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/02/05/%E7%A1%AC%E4%BB%B6%E6%A3%80%E6%9F%A5/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/02/05/error%20code/" class="archive-article-date">
-  	<time datetime="2021-02-05T08:59:11.458Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-05</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/02/05/error%20code/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -230,8 +480,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
